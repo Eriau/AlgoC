@@ -1,0 +1,1 @@
+// Cf etudiant.c j'avais déjà utilisé une structure

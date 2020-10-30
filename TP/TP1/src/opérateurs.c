@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main(){
-	int a = 16;
-	int b = 3;
-	int sum = a + b;
-	int mult = a*b;
-	float div = a/b; // Même en déclarant un float on aura pas le bon résultat car a et b sont des int, il faudrait transtyper
-	
-	printf("somme : %hd, produit : %hd, division : %f", sum, mult, div);
+	char a = 16;
+	char b = 3;
+	char sum = a + b;
+	short int mult = a*b;
+	float div = a/b;  // Comme a et b sont de types char, la division est de type char, même si on la stocke dans un float
+	float divOk = (float)a/(float)b; // En transtypant a et b on a bien un résultat de type float que l'on stocke dans un float
+
+	printf("somme : %hd, produit : %hd, division : %f, division correcte : %f", sum, mult, div, divOk);
 	
 	return 0;
 }

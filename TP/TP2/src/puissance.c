@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main (int argc, char* argv[]){
-    int a, b, res;
+    short int a, b, res;
     printf("Rentrez un nombre : \n");
+    fflush(stdin);
     scanf("%d",&a);
     printf("Un autre: \n");
+    fflush(stdin);
     scanf("%d",&b);
     
     res = a;

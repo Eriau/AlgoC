@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main (int argc, char* argv[]){
-    char chaine_un[10] = "Bonjour";
+    char chaine_un[20] = "Bonjour";
     char chaine_deux[10] = "Au revoir";
     char chaine_copie[10] = {0};
-    int test = 1, i = 0, j = 0;
+    int test = 1, i = 0, j = 0, k = 0;
 
     // Taille chaine car
     while(test == 1){
@@ -25,5 +25,13 @@ int main (int argc, char* argv[]){
     printf("%s\n", chaine_copie);
 
     //Concatenation
+    while(chaine_deux[k] != '\0'){
+        chaine_un[i] = chaine_deux[k];
+        i++;
+        k++;
+    }
+    chaine_un[i+k] = '\0';
+    printf("%s\n", chaine_un);
+    
     return 0;
 }
