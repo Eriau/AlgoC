@@ -13,12 +13,12 @@ int main (int argc, char* argv[]){
     unsigned int tab[TAILLE_TAB];
 
     
-    for(char i=0;i<TAILLE_TAB;i++){ // On remplit le tableau
+    for(unsigned char i=0;i<TAILLE_TAB;i++){ // On remplit le tableau
         tab[i] = rand()%VAL_MAX;
     }
     
 
-    for(int i=0;i<TAILLE_TAB;i++){ // Mieux sous forme de fonction mais bon
+    for(unsigned char i=0;i<TAILLE_TAB;i++){ // Mieux sous forme de fonction mais bon
         printf("%u ", tab[i]);
     }
 
@@ -31,10 +31,10 @@ int main (int argc, char* argv[]){
 
 void tri(int *tab, unsigned char tailleTab){
     unsigned int intermUn = 0, intermDeux = 0; // Permet de garder la valeur pendant l'échange pour le tri du tableau
-    char numbIntToSort = tailleTab, j = 0, h = TAILLE_TAB - 1;
+    unsigned char numbIntToSort = tailleTab, j = 0, h = TAILLE_TAB - 1;
 
     while(numbIntToSort != 0){
-        char indMin = j, indMax = j;
+        unsigned char indMin = j, indMax = j;
         unsigned int min = tab[j];  // On assigne une valeur arbitraire pour le min et le max
         unsigned int max = tab[j];
 
@@ -69,7 +69,7 @@ void tri(int *tab, unsigned char tailleTab){
         h--;
     }
 
-    for(int i=0;i<tailleTab;i++){ // On affiche le tableau
+    for(unsigned char i=0;i<tailleTab;i++){ // On affiche le tableau
         printf("%u ", tab[i]);
     }
 }

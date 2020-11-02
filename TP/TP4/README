@@ -1,15 +1,27 @@
 # Bibliothèques
-* 
-*
+
+Exo 4.1 : stdio.h
+Exo 4.2 : stdio.h
+Exo 4.3 : stdio.h
+Exo 4.4 : stdio.h
+Exo 4.5 : stdio.h
+Exo 4.6 : stdio.h
+Exo 4.7 : stdio.h 
 
 # Références
-*
-*
+Groupe Info 1
 
 # Difficulté
-*
+
+Exo 4.1 : Facile
+Exo 4.2 : Facile
+Exo 4.3 : Moyen
+Exo 4.4 : Moyen
+Exo 4.5 : Moyen
+Exo 4.6 : Difficile
+Exo 4.7 : Difficile
 
 # Commentaires
-* 
-* 
+
+L'exo sur 'fichier.c' a été fait en s'aidant grandement du cours suivant : https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/16421-lire-et-ecrire-dans-des-fichiers et de ce cours-ci : https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/16993-la-saisie-de-texte-securisee
 

@@ -2,11 +2,10 @@
 #include <string.h>
 
 typedef struct Etudiant{
-	char *nom, *prenom, *adresse, *notesC, *notesSysExp;
-    char *tabEtu[5];
+	char nom[20], prenom[20], adresse[20], notesC[20], notesSysExp[20];
 }Etudiant_t;
 
-void etudiant(char *tabEtu[], Etudiant_t etu);
+void etudiant(Etudiant_t etu);
 
 int main (int argc, char* argv[]){
 
@@ -16,24 +15,17 @@ int main (int argc, char* argv[]){
     Etudiant_t etuQuatre = {"Herve /", "Plate /", "Lyon /", "[10, 2, 4] /", "[12, 4, 8]"};
     Etudiant_t etuCinq = {"Henri /", "Longe /", "Paris /", "[10, 9, 9] /", "[12, 9, 9]"};
 
-    etudiant(etuUn.tabEtu, etuUn);
-    etudiant(etuDeux.tabEtu, etuDeux);
-    etudiant(etuTrois.tabEtu, etuTrois);
-    etudiant(etuQuatre.tabEtu, etuQuatre);
-    etudiant(etuCinq.tabEtu, etuCinq);
+    etudiant(etuUn);
+    etudiant(etuDeux);
+    etudiant(etuTrois);
+    etudiant(etuQuatre);
+    etudiant(etuCinq);
 
     return 0;
 }
 
-void etudiant(char *tabEtu[], Etudiant_t etu){
-    tabEtu[0] = etu.nom;
-    tabEtu[1] = etu.prenom;
-    tabEtu[2] = etu.adresse;
-    tabEtu[3] = etu.notesC;
-    tabEtu[4] = etu.notesSysExp;
-    for(int i = 0; i<5;i++){
-        printf("%s ", tabEtu[i]);
-    }
+void etudiant(Etudiant_t etu){
+    printf("%s %s %s %s %s", etu.nom, etu.prenom, etu.adresse, etu.notesC, etu.notesSysExp);
     printf("\n");
     return;
 }

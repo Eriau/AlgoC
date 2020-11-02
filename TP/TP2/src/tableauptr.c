@@ -10,7 +10,7 @@ int main (int argc, char* argv[]){
 
     int tabUn[10];
     float tabDeux[10];
-    for(int i=0;i<10;i++){
+    for(unsigned char i=0;i<10;i++){
         *(tabUn + i)=rand()%100;  // tabUn[i] <-> *(tabUn +i)
         *(tabDeux + i)=((float)rand()/RAND_MAX)*100;
     }
@@ -20,7 +20,7 @@ int main (int argc, char* argv[]){
 
     printf("\n");
 
-    for(int i=0;i<10;i++){
+    for(unsigned char i=0;i<10;i++){
         if((i%2==0)&&(i!=0)){
             *(tabUn + i) *= 3;
             *(tabDeux + i) *= 3;
@@ -36,14 +36,14 @@ int main (int argc, char* argv[]){
 
 //Probablement possible de tester le type dans notre tab et de print en fonction..
 void affTabInt(int *tab, int tailleTab){
-    for(int i=0;i<tailleTab;i++){
+    for(unsigned char i=0;i<tailleTab;i++){
         printf("%d ", *(tab + i));
     }
     printf("\n");
 }
 
 void affTabFloat(float *tab, int tailleTab){
-    for(int i=0;i<tailleTab;i++){
+    for(unsigned char i=0;i<tailleTab;i++){
         printf("%f ", *(tab + i));
     }
     printf("\n");

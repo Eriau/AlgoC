@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char* argv[]){
+int main (){
     char chaine_un[20] = "Bonjour";
     char chaine_deux[10] = "Au revoir";
     char chaine_copie[10] = {0};

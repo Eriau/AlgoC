@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 int main(){
     int tabTest[5] = {0, 4096, 65536, 65535, 1024};
 
-    for(int l=0;l<5;l++){
-        char binaire[50] = ""; // On initalise nos tableaux qui stockerons les bits de notre mot
-        char reversed_binaire[50] = ""; 
-        int testBase = tabTest[l];
-        int done = 0;
-        int count = 0;
-        int t, i, j;
+    for(unsigned char l=0;l<5;l++){
+        unsigned char binaire[50] = "", reversed_binaire[50] = ""; // On initalise nos tableaux qui stockerons les bits de notre mot
+        int testBase = tabTest[l], count = 0, t, i;
+        bool done = false;
+        unsigned char j;
 
-        while(done == 0){ // On fais une division euclidienne par deux jusqu'à que l'on arrive à 0
+        while(done != true){ // On fais une division euclidienne par deux jusqu'à que l'on arrive à 0
         
             if ((count%4 == 0) && (count != 0)){
                 strcat(binaire, " ");

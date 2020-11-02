@@ -1,6 +1,6 @@
 # Bibliothèques
 
-Exo 1.1 : stdio.h
+Exo 1.1 : stdio.h 
 Exo 1.2 : stdio.h
 Exo 1.3 : stdio.h
 Exo 1.4 : stdio.h
@@ -8,7 +8,7 @@ Exo 1.5 : stdio.h
 Exo 1.6 : stdio.h / string.h
 Exo 1.7 : stdio.h 
 Exo 1.8 : stdio.h
-Exo 1.9 : stdio.h
+Exo 1.9 : stdio.h / stdbool.h
 
 # Références
 Groupe Info 1

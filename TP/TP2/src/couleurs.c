@@ -12,7 +12,7 @@ int main (int argc, char* argv[]){
 
     RGB_t tabCouleur[10] = {jaune, rouge, bleu, vert};
 
-    for(int i=0;i<10;i++){
+    for(unsigned char i=0;i<10;i++){
         printf("0x%02X%02X%02X%02X\n", tabCouleur[i].Red, tabCouleur[i].Green, tabCouleur[i].Blue, tabCouleur[i].Alpha);
     }
 

@@ -1,13 +1,27 @@
 # Bibliothèques
-* 
-*
+
+Exo 3.1 : stdio.h
+Exo 3.2 : stdio.h / time.h / stdlib.h
+Exo 3.3 : stdio.h / string.h / time.h / stdlib.h
+Exo 3.4 : stdio.h / time.h / stdlib.h
+Exo 3.5 : stdio.h / string.h / time.h / stdlib.h / stdbool.h
+Exo 3.6 : stdio.h / string.h
+Exo 3.7 : stdio.h 
+Exo 3.8 : stdio.h / stdbool.h
 
 # Références
-*
-*
+Groupe Info 1
 
 # Difficulté
-*
+
+Exo 3.1 : Facile
+Exo 3.2 : Facile
+Exo 3.3 : Moyen
+Exo 3.4 : Moyen
+Exo 3.5 : Moyen
+Exo 3.6 : Moyen
+Exo 3.7 : Difficile
+Exo 3.8 : Difficile
 
 # Commentaires
 * 

@@ -15,7 +15,7 @@ int main (int argc, char* argv[]){
     srand(time(NULL));
     unsigned int tab[TAILLE_TAB];
 
-    for(char i=0;i<TAILLE_TAB;i++){ // On remplit le tableau
+    for(unsigned char i=0;i<TAILLE_TAB;i++){ // On remplit le tableau
         tab[i] = rand()%VAL_MAX;
     }
 

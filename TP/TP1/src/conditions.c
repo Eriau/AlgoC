@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    for (int i=0; i<1001;i++){
+    for (unsigned short int i=0; i<1001;i++){
         if ((i%2 == 0) && (i%15 == 0)){ 
             printf("%hd\n", i);
         }

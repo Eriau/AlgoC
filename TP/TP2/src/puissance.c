@@ -11,7 +11,7 @@ int main (int argc, char* argv[]){
     
     res = a;
 
-    for(int i=1;i<b;i++){
+    for(unsigned char i=1;i<b;i++){
         res = res * a;
     }
 

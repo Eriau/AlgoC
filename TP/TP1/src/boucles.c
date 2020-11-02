@@ -9,16 +9,16 @@ int main(){
 		printf("Taille triangle ? (Plus que 4) : ");
 		scanf("%hd", &compter);
 	}
-	for(int i=0; i<compter; i++){
+	for(unsigned char i=0; i<compter; i++){
 		char aff[255] = "";	// On crée un tableau assez grand pour ne pas avoir de problème (255 un peu excessif)
 		if ((i <=1) || (i == compter - 1)){ // Si on est à la première ou dernière ligne, on ne met que des *
-			for(int l=0; l<=i; l++){
+			for(unsigned char l=0; l<=i; l++){
 				strcat(aff, "*");	
 			}	
 			printf("%s\n", aff); 
 		}
 		else{
-			for(int l=0; l<=i; l++){ // Sinon on regarde si on est en début ou fin de ligne, et on met des * ou des # selon notre position
+			for(unsigned char l=0; l<=i; l++){ // Sinon on regarde si on est en début ou fin de ligne, et on met des * ou des # selon notre position
 				if ((l==0) || (l==i)){
 					strcat(aff, "*");	
 				}
