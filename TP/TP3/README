@@ -6,7 +6,7 @@ Exo 3.3 : stdio.h / string.h / time.h / stdlib.h
 Exo 3.4 : stdio.h / time.h / stdlib.h
 Exo 3.5 : stdio.h / string.h / time.h / stdlib.h / stdbool.h
 Exo 3.6 : stdio.h / string.h
-Exo 3.7 : stdio.h 
+Exo 3.7 : stdio.h / stdbool.h / stdlib.h / time.h
 Exo 3.8 : stdio.h / stdbool.h
 
 # Références
