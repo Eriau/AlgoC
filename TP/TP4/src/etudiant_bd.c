@@ -2,9 +2,6 @@
 #include <string.h>
 #include "fichier.h"
 
-#include <stdio.h>
-#include <string.h>
-
 typedef struct Etudiant{
 	char nom[20], prenom[20], adresse[20], notesC[20], notesSysExp[20];
 }Etudiant_t;

@@ -1,12 +1,12 @@
 # Bibliothèques
 
-Exo 4.1 : stdio.h
-Exo 4.2 : stdio.h
-Exo 4.3 : stdio.h
-Exo 4.4 : stdio.h
+Exo 4.1 : stdio.h / operator.h
+Exo 4.2 : stdio.h / stdlib.h / string.h / fichier.h
+Exo 4.3 : stdio.h / string.h / fichier.h
+Exo 4.4 : stdio.h / stdlib.h / operator.h
 Exo 4.5 : stdio.h
-Exo 4.6 : stdio.h
-Exo 4.7 : stdio.h 
+Exo 4.6 : stdio.h / stdlib.h / string.h
+Exo 4.7 : stdio.h / stdlib.h / liste.h
 
 # Références
 Groupe Info 1
@@ -24,4 +24,4 @@ Exo 4.7 : Difficile
 # Commentaires
 
 L'exo sur 'fichier.c' a été fait en s'aidant grandement du cours suivant : https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/16421-lire-et-ecrire-dans-des-fichiers et de ce cours-ci : https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/16993-la-saisie-de-texte-securisee
-
+L'exo sur 'liste.c' a été fait en s'aidant grandement du cours suivant : https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/19733-les-listes-chainees
