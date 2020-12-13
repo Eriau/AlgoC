@@ -9,11 +9,12 @@ SOBJS ?= serveur.o
 
 SERVER = serveur
 CLIENT = client
+CALCUL = calcule.c
 
 all: $(SERVER) $(CLIENT)
 
 $(SERVER): $(SOBJS)
-	$(CC) -o $(SERVER) $(SOBJS)
+	$(CC) -o $(SERVER) $(SOBJS) $(CALCUL)
 
 $(CLIENT): $(COBJS)
 	$(CC) -o $(CLIENT) $(COBJS)

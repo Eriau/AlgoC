@@ -51,10 +51,46 @@ int envoie_recois_message(int socketfd) {
     return -1;
   }
 
-  printf("Message recu: %s\n", data);
+  printf("Calcul reçu: %s\n", data);
  
   return 0;
 }
+
+int  envoie_operateur_numeros(int socketfd){
+
+    char data[1024];
+    // la réinitialisation de l'ensemble des données
+    memset(data, 0, sizeof(data));
+
+
+    // Demandez à l'utilisateur d'entrer un message
+    char message[100];
+    printf("Votre calcul (max 1000 caracteres): ");
+    fgets(message, 1024, stdin);
+    strcpy(data, message);
+
+    int write_status = write(socketfd, data, strlen(data));
+    if ( write_status < 0 ) {
+        perror("erreur ecriture");
+        exit(EXIT_FAILURE);
+    }
+
+    // la réinitialisation de l'ensemble des données
+    memset(data, 0, sizeof(data));
+
+
+    // lire les données de la socket
+    int read_status = read(socketfd, data, sizeof(data));
+    if ( read_status < 0 ) {
+        perror("erreur lecture");
+        return -1;
+    }
+
+    printf("Calcul recu: %s\n", data);
+
+    return 0;
+}
+
 
 int main() {
   int socketfd;
@@ -85,7 +121,7 @@ int main() {
   }
 
   // appeler la fonction pour envoyer un message au serveur
-  envoie_recois_message(socketfd);
+  envoie_operateur_numeros(socketfd);
 
   close(socketfd);
 }

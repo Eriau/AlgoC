@@ -1,15 +1,37 @@
 # Bibliothèques
-* 
-*
+"calcule.h"
+<string.h>
+<unistd.h>
+"client.h"
+"repertoire.h"
+"dirent.h"
+"stdio.h"
+"stdlib.h"
+"string.h"
+<stdio.h>
+<sys/types.h> 
+<sys/socket.h>
+<sys/epoll.h>
+<netinet/in.h>
+<unistd.h>
+"calcule.h"
+"serveur.h"
+
 
 # Références
-*
-*
+Groupe Info 1
 
 # Difficulté
-*
+Exo 5.1 : Facile
+Exo 5.2 : Facile
+Exo 5.3 : Moyen
+Exo 5.4 : Moyen
+Exo 5.5 : Difficile
+Exo 5.6 : Difficile
+
 
 # Commentaires
-* 
-* 
-
+Pour les questions d'ouvertures de dossiers je me suis grandement aidé du site suivant : https://www.geeksforgeeks.org/c-program-list-files-sub-directories-directory/
+Je n'ai pas compris la question sur l'ouverture itérative. 
+Je me suis aussi inspiré d'un collège de la promo pour les question : https://gitlab.com/val_duss/algo-cpe/-/tree/master/tp5
+Pour la question 5.6 je n'ai pas eu le temps
